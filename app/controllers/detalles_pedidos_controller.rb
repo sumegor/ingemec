@@ -1,0 +1,2 @@
+class DetallesPedidosController < ApplicationController
+end

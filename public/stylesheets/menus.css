@@ -1,0 +1,149 @@
+/* HOJA DE ESTILOS DE MENUS: izquierdo y superior */
+
+.navi {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.navi li {
+/*	background-color:#DBE9F2;
+	background-color:#E1F0FF;*/
+	padding: 1px;
+}
+
+.navi li a {
+	display:block;
+	width: auto;
+	text-decoration:none;
+	outline: none;
+	line-height: 14px;
+}
+
+.navi li.first_level{
+	font-size: 9pt;;
+}
+
+.navi li.first_level a{
+	font-weight: bold;
+	padding: 4px;
+}
+
+.navi li.second_level a{
+	padding: 4px;
+	padding-left: 28px;
+}
+
+.navi li.second_level{
+	font-size: 8pt;
+}
+
+.navi li a:hover, .navi li a:active{
+	background-color:#FFFFFF;
+	text-decoration: underline;
+}
+
+img.navi_top_box_left{
+	float: left;
+}
+
+img.navi_top_box_right{
+	float: right;
+}
+
+#navi_top ul {  
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#navi_top ul li {
+	height: 20px;
+	float:  left;
+	padding-top: 5px;
+	padding-bottom: 4px;
+	padding-left: 4px;
+	padding-right: 3px;
+}
+
+#navi_top ul li.separador_menu_superior {
+	height: 17px;
+	float:  left;
+	padding-top: 8px;
+	width: auto;
+}
+
+#navi_top ul li a {
+	font-size: 12px;
+	line-height: 14px;
+	display: inline-block;
+	height: 16px;
+	padding: 4px 6px 0px 6px;
+	text-decoration:none;
+	text-align:center;
+	outline: none;
+	font-weight: bold;
+	border:0;
+}
+
+#navi_top ul li a:hover, #navi_top ul li a:active {
+	text-decoration: underline;
+	background-color: #FFFFFF;
+}
+
+#navi_top{
+	height: 30px;
+}
+
+.img_item_usuarios, .img_item_perfiles, .img_item_privilegios, .img_item_clientes, .img_item_obras, .img_item_herramientas, .img_item_informes, .img_item_cambio_contrasena, .img_item_inicio, .img_item_manual, .img_item_cerrar_sesion {
+	margin-top: 1px;
+	margin-left: 4px;
+	float: left;
+	height: 18px;
+	width: 24px;
+	background-image: url(../images/imagenes.png);
+	background-repeat: no-repeat;	
+}
+.img_item_usuarios{
+	background-position: 0 -18px;
+}
+
+.img_item_perfiles{
+	background-position: -24px -18px;
+}
+
+.img_item_privilegios{
+	background-position: -96px -18px;
+}
+
+.img_item_clientes{
+	background-position: -72px 0px;
+}
+
+.img_item_obras{
+	background-position: -48px -18px;
+}
+
+.img_item_herramientas{
+	background-position: -120px 0px;
+}
+
+.img_item_informes{
+	background-position: -144px -18px;
+}
+
+.img_item_cambio_contrasena{
+	background-position: -168px -18px;
+}
+
+.img_item_inicio{
+	background-position: -192px -18px;
+}
+
+.img_item_manual{
+	background-position: -216px -18px;
+}
+
+.img_item_cerrar_sesion{
+	background-position: -240px 0px;
+}

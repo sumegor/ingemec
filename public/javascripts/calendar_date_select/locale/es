@@ -1,0 +1,10 @@
+Date.months = $w("_("Enero Febrero Marzo Abril Mayo Junio Julio Agosto Septiembre Octubre Noviembre Deciembre")");
+Date.weekdays = $w("_("D L Ma Mi J V S")");
+
+Date.first_day_of_week = 1
+
+_translations = {
+	"OK": "_("OK")",
+	"Now": "_("Ahora")",
+	"Today": "_("Hoy")"
+}

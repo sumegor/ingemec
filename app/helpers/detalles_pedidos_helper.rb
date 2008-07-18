@@ -1,0 +1,2 @@
+module DetallesPedidosHelper
+end

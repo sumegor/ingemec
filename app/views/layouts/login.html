@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sistema de Gesti&oacute;n de Herramientas</title>
+
+<!--
+<%= javascript_include_tag :defaults %>
+<%= calendar_date_select_includes nil, :locale=>'es'%>
+<%= active_scaffold_includes %>
+<%= stylesheet_link_tag 'scaffold' %>
+
+<%= stylesheet_link_tag 'base' %>
+<%= stylesheet_link_tag 'tablas_formularios' %>
+<%= stylesheet_link_tag 'menus' %>
+
+<%= javascript_include_tag "niftycube"  %>
+<%= javascript_include_tag "niftyLayout"  %> 
+-->
+
+<script type="text/javascript" src="../../../public/javascripts/niftycube.js"></script>
+<script type="text/javascript" src="../../../public/javascripts/niftyLayout.js"></script>
+
+<link href="../../../public/stylesheets/base.css" rel="stylesheet" type="text/css" />
+<link href="../../../public/stylesheets/tablas_formularios.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div id="contenedor_login">
+		<div id="login_logo"> </div>
+        <div class="caja_superior_contenido"> 
+        	<div class="caja_contenido_esquina_sup_izq"></div>
+            <div class="login_esquina_sup_der"></div>
+        </div>
+        	<div class="caja_centro_contenido"> 
+            	<div class="caja_texto_contenido">
+                	<div id="encabezado"> Entrada al sistema </div>
+                        <div class="formulario">
+                            <form id="form1" name="form1" method="post" action="">
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <th scope="row">Nombre de usuario</th>
+                                    <td><input name="textfield" type="text" id="textfield" size="30" /></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Contrase&ntilde;a</th>
+                                    <td><input name="textfield2" type="text" id="textfield2" size="30" /></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">&nbsp;</th>
+                                  <td>
+                                  	<div class="controles">
+                                  		<input type="reset" name="button2" id="button2" value="Restablecer" /> 
+                                  <input type="submit" name="button" id="button" value="Entrar" /></div></td>
+                                </tr>
+                            </table>
+                          </form>
+                        </div>
+               	</div>
+      </div>
+        <div class="caja_inferior_contenido">
+        	<div class="caja_contenido_esquina_inf_izq"></div>
+            <div class="caja_contenido_esquina_inf_der"></div>
+        </div>
+	</div> <!-- contenedor_login -->
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+
+@font-face{
+	font-family: "Arial Narrow";
+	src: url(../fuentes/ARIALN.TTF) format("truetype");
+}
+
+div.formulario input[type="text"]{
+	background-color: #FFFFFF;
+	border: solid 1px #BBBBBB;
+	padding: 2px;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+div.formulario input[type="submit"], div.formulario input[type="reset"]{
+	background-image: url(../images/botones.png);
+	background-repeat:  repeat-x;
+	height: 27px;
+	border: none;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #CCCCCC;
+	border-right-color: #333333;
+	border-bottom-color: #333333;
+	border-left-color: #CCCCCC;
+	border-top-color: #c4cccc;
+	border-right-color: #acb5b5;
+	border-bottom-color: #6f7777;
+	border-left-color: #acb5b5;
+	font-weight: bold;
+	font-size: 12px;
+	color: #333333;
+	font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	
+}
+
+div.formulario input[value="Crear"], div.formulario input[value="Guardar"], div.formulario input[value="Create"], div.formulario input[value="Actualizar"], div.formulario input[value="Update"], div.formulario input[value="Entrar"], div.formulario input[value="Restablecer"]{
+	background-image: url(../images/botones.png);
+	padding-left: 26px;
+	background-position: left top;
+}
+
+div.formulario input[value="Crear"]:hover, div.formulario input[value="Guardar"]:hover, div.formulario input[value="Create"]:hover, div.formulario input[value="Actualizar"]:hover, div.formulario input[value="Update"]:hover, div.formulario input[value="Entrar"]:hover, div.formulario input[value="Restablecer"]:hover{
+/*	background-image: url(../imagenes/fondo_boton_crear.png);*/
+	background-position: left -27px;
+}
+
+div.formulario input[value="Crear"]:active, div.formulario input[value="Guardar"]:active, div.formulario input[value="Create"]:active, div.formulario input[value="Actualizar"]:active, div.formulario input[value="Update"]:active, div.formulario input[value="Entrar"]:active, div.formulario input[value="Restablecer"]:active{
+	/*	background-image: url(../imagenes/fondo_boton_crear.png);*/
+	padding-top: 2px;
+	background-position: 0px -26px;
+	border-bottom-color: #666666;
+}
+
+
+div.formulario input[type="submit"]:hover, div.formulario input[type="text"]:focus, div.formulario input[type="text"]:hover, div.formulario textarea:focus, div.formulario textarea:hover{
+	/*outline: solid 1px #d6ffc9;*/
+	outline: solid 1px #ABCBE0;
+}
+
+div.formulario input[type="text"]:focus{
+	/*background-color: #FFF0D2;*/
+	background-color: #FFF7E6;
+}
+
+table.tabla_lista{
+	font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	border-right: solid 1px #CCCCCC;
+	color:#333333
+}
+
+table.tabla_lista th{
+	font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+	/*background-color: #828282;
+      background-color: #004B97;
+    background-color: #0086C6;*/
+	background-color: #004B97;
+	border-bottom: solid 1px #004B97;
+	border-left: solid 1px #004B97;
+	color: #FFFFFF;
+	margin: 0;
+	font-size: 9pt;
+	padding: 3px 5px 3px 5px;
+}
+
+table.tabla_lista td{
+	font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+	border-bottom: solid 1px #CCCCCC;
+	border-left: solid 1px #CCCCCC;
+	font-size: 10pt;
+	padding: 2px 5px 2px 5px;
+}
+
+table.tabla_lista .tr_impar td{
+	font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+	/*background-color: #FFF7E6;*/
+	background-color: #E6E6E6;
+}
+
+table.tabla_lista .tr_par td{
+	font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+	background-color: #CCCCCC;
+}
+
+div.borde_fomulario{
+	width: auto;
+	padding: 1px;
+	background-color: #336666;
+}
+
+div.formulario{
+	/*border-top: solid 1px #999999;
+	border-bottom: solid 1px #999999;*/
+	
+	/*border: solid 1px #BBBBBB;*/
+	width: auto;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	/*	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: #FFFDF9;
+	background-color: #F8F8F8;*/
+	background-color: #F8F8F8;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+div.formulario table{
+	margin: 0;
+	padding: 0;
+}
+
+div.formulario th{
+	text-align: right;
+	width: auto;
+	font-size: 9pt;
+	color:#666666;
+}
+
+div.formulario th, div.formulario td{
+	padding: 2px 5px 2px 5px;
+}
+
+div.campos {
+
+}
+
+div.formulario div.controles{
+	margin-top: 5px;
+	padding-top: 6px;
+/*	padding-left: 150px; 
+	border-top: dotted 2px #E6E6E6;*/
+	border-top: dotted 2px #E6E6E6;
+}

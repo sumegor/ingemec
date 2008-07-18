@@ -1,0 +1,344 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: sgh-copia 0.1\n"
+"POT-Creation-Date: 2008-07-04 21:57-0500\n"
+"PO-Revision-Date: 2008-07-04 21:57-0500\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: app/models/ciudad.rb:-
+msgid "ciudad"
+msgstr ""
+
+#: app/models/ciudad.rb:-
+msgid "Ciudad|Nombre"
+msgstr ""
+
+#: app/models/ciudad.rb:-
+msgid "Ciudad|Departamento"
+msgstr ""
+
+#: app/models/ciudad.rb:-
+msgid "Ciudad|Created at"
+msgstr ""
+
+#: app/models/ciudad.rb:-
+msgid "Ciudad|Updated at"
+msgstr ""
+
+#: app/models/cliente.rb:-
+msgid "cliente"
+msgstr ""
+
+#: app/models/cliente.rb:-
+msgid "Cliente|Nombre"
+msgstr ""
+
+#: app/models/cliente.rb:-
+msgid "Cliente|Direccion"
+msgstr ""
+
+#: app/models/cliente.rb:-
+msgid "Cliente|Telefono 1"
+msgstr ""
+
+#: app/models/cliente.rb:-
+msgid "Cliente|Telefono 2"
+msgstr ""
+
+#: app/models/cliente.rb:-
+msgid "Cliente|Fax"
+msgstr ""
+
+#: app/models/cliente.rb:-
+msgid "Cliente|Email"
+msgstr ""
+
+#: app/models/cliente.rb:-
+msgid "Cliente|Ciudad"
+msgstr ""
+
+#: app/models/cliente.rb:-
+msgid "Cliente|Departamento"
+msgstr ""
+
+#: app/models/cliente.rb:-
+msgid "Cliente|Created at"
+msgstr ""
+
+#: app/models/cliente.rb:-
+msgid "Cliente|Updated at"
+msgstr ""
+
+#: app/models/departamento.rb:-
+msgid "departamento"
+msgstr ""
+
+#: app/models/departamento.rb:-
+msgid "Departamento|Nombre"
+msgstr ""
+
+#: app/models/departamento.rb:-
+msgid "Departamento|Pais"
+msgstr ""
+
+#: app/models/departamento.rb:-
+msgid "Departamento|Created at"
+msgstr ""
+
+#: app/models/departamento.rb:-
+msgid "Departamento|Updated at"
+msgstr ""
+
+#: app/models/pais.rb:-
+msgid "pais"
+msgstr ""
+
+#: app/models/pais.rb:-
+msgid "Pais|Nombre"
+msgstr ""
+
+#: app/models/pais.rb:-
+msgid "Pais|Iso"
+msgstr ""
+
+#: app/models/pais.rb:-
+msgid "Pais|Created at"
+msgstr ""
+
+#: app/models/pais.rb:-
+msgid "Pais|Updated at"
+msgstr ""
+
+#: app/models/tipo_doc.rb:-
+msgid "tipos doc"
+msgstr ""
+
+#: app/models/tipo_doc.rb:-
+msgid "TipoDoc|Nombre"
+msgstr ""
+
+#: app/models/tipo_doc.rb:-
+msgid "TipoDoc|Descripcion"
+msgstr ""
+
+#: app/models/tipo_doc.rb:-
+msgid "TipoDoc|Created at"
+msgstr ""
+
+#: app/models/tipo_doc.rb:-
+msgid "TipoDoc|Updated at"
+msgstr ""
+
+#: app/models/usuario.rb:-
+msgid "usuario"
+msgstr ""
+
+#: app/models/usuario.rb:-
+msgid "Usuario|Nombres"
+msgstr ""
+
+#: app/models/usuario.rb:-
+msgid "Usuario|Apellidos"
+msgstr ""
+
+#: app/models/usuario.rb:-
+msgid "Usuario|Documento"
+msgstr ""
+
+#: app/models/usuario.rb:-
+msgid "Usuario|Direccion"
+msgstr ""
+
+#: app/models/usuario.rb:-
+msgid "Usuario|Telefono 1"
+msgstr ""
+
+#: app/models/usuario.rb:-
+msgid "Usuario|Telefono 2"
+msgstr ""
+
+#: app/models/usuario.rb:-
+msgid "Usuario|Movil"
+msgstr ""
+
+#: app/models/usuario.rb:-
+msgid "Usuario|Email"
+msgstr ""
+
+#: app/models/usuario.rb:-
+msgid "Usuario|Password"
+msgstr ""
+
+#: app/models/usuario.rb:-
+msgid "Usuario|Username"
+msgstr ""
+
+#: app/models/usuario.rb:-
+msgid "Usuario|Tipo doc"
+msgstr ""
+
+#: app/models/usuario.rb:-
+msgid "Usuario|Ciudad"
+msgstr ""
+
+#: app/models/usuario.rb:-
+msgid "Usuario|Departamento"
+msgstr ""
+
+#: app/models/usuario.rb:-
+msgid "Usuario|Created at"
+msgstr ""
+
+#: app/models/usuario.rb:-
+msgid "Usuario|Updated at"
+msgstr ""
+
+#: lib/localize_active_scaffold.rb:46
+msgid "Open"
+msgstr ""
+
+#: lib/localize_active_scaffold.rb:47
+#: vendor/plugins/active_scaffold/frontends/default/views/list.rhtml:22
+#: vendor/plugins/active_scaffold/frontends/default/views/_list_inline_adapter.rhtml:5
+#: vendor/plugins/active_scaffold/frontends/default/views/_messages.rhtml:6
+#: vendor/plugins/active_scaffold/frontends/default/views/_show.rhtml:6
+msgid "Close"
+msgstr "Cerrar"
+
+#: lib/localize_active_scaffold.rb:48
+msgid "close"
+msgstr "cerrar"
+
+#: lib/localize_active_scaffold.rb:49
+msgid "Edit"
+msgstr "Editar"
+
+#: lib/localize_active_scaffold.rb:50
+#: vendor/plugins/active_scaffold/frontends/default/views/delete.rhtml:7
+msgid "Delete"
+msgstr "Eliminar"
+
+#: lib/localize_active_scaffold.rb:51
+msgid "Show"
+msgstr "Ver"
+
+#: lib/localize_active_scaffold.rb:52
+#: vendor/plugins/active_scaffold/frontends/default/views/_field_search.rhtml:45
+#: vendor/plugins/active_scaffold/frontends/default/views/_search.rhtml:11
+msgid "Search"
+msgstr "Buscar"
+
+#: lib/localize_active_scaffold.rb:53
+#: vendor/plugins/active_scaffold/frontends/default/views/_search.rhtml:18
+msgid "Search Terms"
+msgstr "T&eacute;rminos de b&uacute;squeda"
+
+#: lib/localize_active_scaffold.rb:54
+#: vendor/plugins/active_scaffold/frontends/default/views/_list.rhtml:14
+msgid "No Entries"
+msgstr "No hay entradas"
+
+#: lib/localize_active_scaffold.rb:55
+#: vendor/plugins/active_scaffold/frontends/default/views/_list.rhtml:29
+msgid "Found"
+msgstr "Encontrado(s)"
+
+#: lib/localize_active_scaffold.rb:56
+msgid "Create New"
+msgstr "Crear nuevo"
+
+#: lib/localize_active_scaffold.rb:57
+#: vendor/plugins/active_scaffold/frontends/default/views/delete.rhtml:4
+msgid "Are you sure?"
+msgstr "¿Est&aacute; seguro de eliminar el registro actual?"
+
+#: lib/localize_active_scaffold.rb:58
+#: vendor/plugins/active_scaffold/frontends/default/views/delete.rhtml:8
+#: vendor/plugins/active_scaffold/frontends/default/views/_add_existing_form.rhtml:33
+#: vendor/plugins/active_scaffold/frontends/default/views/_create_form.rhtml:38
+#: vendor/plugins/active_scaffold/frontends/default/views/_update_form.rhtml:42
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: vendor/plugins/active_scaffold/frontends/default/views/list.rhtml:20
+msgid "Request Failed (code 500, Internal Error)"
+msgstr "Request Failed (code 500, Internal Error)"
+
+#: vendor/plugins/active_scaffold/frontends/default/views/_add_existing_form.rhtml:28
+#: vendor/plugins/active_scaffold/frontends/default/views/_form_association_footer.rhtml:33
+msgid "- select -"
+msgstr "- seleccionar -"
+
+#: vendor/plugins/active_scaffold/frontends/default/views/_add_existing_form.rhtml:32
+msgid "Add"
+msgstr "Agregar"
+
+#: vendor/plugins/active_scaffold/frontends/default/views/_create_form.rhtml:37
+msgid "Create"
+msgstr "Crear"
+
+#: vendor/plugins/active_scaffold/frontends/default/views/_field_search.rhtml:31
+msgid "True"
+msgstr "Verdadero"
+
+#: vendor/plugins/active_scaffold/frontends/default/views/_field_search.rhtml:32
+msgid "False"
+msgstr "Falso"
+
+#: vendor/plugins/active_scaffold/frontends/default/views/_field_search.rhtml:46
+#: vendor/plugins/active_scaffold/frontends/default/views/_live_search.rhtml:11
+#: vendor/plugins/active_scaffold/frontends/default/views/_search.rhtml:12
+msgid "Reset"
+msgstr "Borrar"
+
+#: vendor/plugins/active_scaffold/frontends/default/views/_form_association_footer.rhtml:22
+msgid "Create Another"
+msgstr "Crear Otro"
+
+#: vendor/plugins/active_scaffold/frontends/default/views/_form_association_footer.rhtml:22
+msgid "Replace With New"
+msgstr "Reemplazar con nuevo registro"
+
+#: vendor/plugins/active_scaffold/frontends/default/views/_form_association_footer.rhtml:30
+#: vendor/plugins/active_scaffold/frontends/default/views/_form_association_footer.rhtml:34
+msgid "Add Existing"
+msgstr "Agregar Existente"
+
+#: vendor/plugins/active_scaffold/frontends/default/views/_form_association_record.rhtml:17
+msgid "Remove"
+msgstr "Remover"
+
+#: vendor/plugins/active_scaffold/frontends/default/views/_list_pagination_links.rhtml:9
+msgid "Previous"
+msgstr "Anterior"
+
+#: vendor/plugins/active_scaffold/frontends/default/views/_list_pagination_links.rhtml:20
+msgid "Next"
+msgstr "Siguiente"
+
+#: vendor/plugins/active_scaffold/frontends/default/views/_live_search.rhtml:17
+msgid "Live Search"
+msgstr "B&uacute;squeda en Directo"
+
+#: vendor/plugins/active_scaffold/frontends/default/views/_nested.rhtml:28
+msgid "%s for %s"
+msgstr "%s para %s"
+
+#: vendor/plugins/active_scaffold/frontends/default/views/_update_form.rhtml:30
+msgid "Update %s"
+msgstr "Actualizar %s"
+
+#: vendor/plugins/active_scaffold/frontends/default/views/_update_form.rhtml:41
+msgid "Update"
+msgstr "Actualizar"
