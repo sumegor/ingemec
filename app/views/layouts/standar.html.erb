@@ -120,8 +120,9 @@
                     <div id="encabezado"> Administraci&oacute;n </div>
                     <div id="area_texto">
                         
-                        <p style="color: green"><%= flash[:notice] %></p>
-                        <div id="contenedor_tabla">
+                         
+													<% if flash[:notice]%> <div class="flash"> <% flash[:notice]%> </div>	<%end%>									
+													<div id="contenedor_tabla">
 												<%= yield  %>
 												</div>
                     

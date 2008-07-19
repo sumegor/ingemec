@@ -35,6 +35,10 @@ ActionController::Routing::Routes.draw do |map|
 
   # See how all your routes lay out with "rake routes"
 
+	map.home	'', :controller => 'admin', :action => 'form_entrada'
+	map.inicio	'inicio', :controller => 'inicio', :action => 'index'
+	#map.root	:controller => 'admin', :action => 'form_entrada'
+	
   # Install the default routes as the lowest priority.
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'

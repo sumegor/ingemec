@@ -1,4 +1,5 @@
 class Usuario < ActiveRecord::Base
+	
 	attr_accessor :password, :password_confirmation
   
 	belongs_to :tipo_doc
@@ -29,10 +30,6 @@ class Usuario < ActiveRecord::Base
 	
 	def self.authenticate(username, password)
 		user = Usuario.find(:first, :conditions => [' username = ?' , username])
-		if user.blank?
-			puts "No encontro el usuario"
-		end
-		
 		if user.blank? || Digest::SHA256.hexdigest(password + user.password_salt) != user.password_hash
 			raise "Nombre invalido"
 		end

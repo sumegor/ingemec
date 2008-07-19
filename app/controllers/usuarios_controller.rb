@@ -19,13 +19,6 @@ class UsuariosController < ApplicationController
 		config.columns[:password_confirmation].label = "Confirmaci&oacute;n contrase&ntilde;a"
 	end
 	
-	# def check_authentication
-		# unless session[:user]
-		# session[:intended_action] = action_name
-			# redirect_to(:controller => "admin", :action => "form_entrada")
-		# end
-	# end
-	
 	def bienvenida
 	end
 end
