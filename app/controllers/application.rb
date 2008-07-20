@@ -26,6 +26,19 @@ class ApplicationController < ActionController::Base
 		# end
 	# end
 	
+	# -----------------------------------------------------------------------------------------------------------------------
+	
+	ActiveScaffold.set_defaults do |config|
+    config.security.current_user_method = :current_user
+  end
+
+  protected
+  def current_user
+    @session[:user_id] ? Usuario.find(@session[:user_id]) : nil
+  end
+	
+	# -----------------------------------------------------------------------------------------------------------------------
+	
 	helper :all # include all helpers, all the time
 
   # See ActionController::RequestForgeryProtection for details

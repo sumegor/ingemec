@@ -73,10 +73,10 @@ ActiveRecord::Schema.define(:version => 20080713035912) do
 
   create_table "herramientas", :force => true do |t|
     t.string   "nombre",                    :null => false
-    t.text     "descripcion",               :null => false
     t.string   "referencia",  :limit => 40, :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "descripcion",               :null => false
   end
 
   create_table "obras", :force => true do |t|

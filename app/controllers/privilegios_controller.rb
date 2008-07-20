@@ -4,7 +4,7 @@ class PrivilegiosController < ApplicationController
 	active_scaffold :privilegio
 	
 	active_scaffold :privilegio do |config|
-		config.columns = [:nombre, :nombre_menu, :descripcion, :controller, :action]
+		config.columns = [:nombre, :visible_menu, :nombre_menu, :descripcion, :controller, :action]
 		#config.columns[:perfiles].form_ui = select
 		
 		config.columns[:descripcion].form_ui = :textarea

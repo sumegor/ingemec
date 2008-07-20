@@ -18,10 +18,9 @@ development:
   adapter: mysql
   encoding: utf8
   database: sghcopia_development
-  username: pedroabp
-  password: prueba
+  username: root
+  password: h3ct0r
   host: localhost
-  socket: /var/run/mysqld/mysqld.sock
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -33,7 +32,6 @@ test:
   username: root
   password:
   host: localhost
-  socket: /var/run/mysqld/mysqld.sock
 
 production:
   adapter: mysql
@@ -42,4 +40,3 @@ production:
   username: root
   password: 
   host: localhost
-  socket: /var/run/mysqld/mysqld.sock
