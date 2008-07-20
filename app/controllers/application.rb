@@ -3,28 +3,31 @@
 
 class ApplicationController < ActionController::Base
   
-	# before_filter	:check_authentication,
-								# :check_authorization,
-								# :except => [:signin_form, :signin]
+	before_filter	:check_authentication,
+								:check_authorization,
+								:except => [:login, :logout]
 	
-	# def check_authentication
-		# unless session[:user]
-			# session[:intended_action] = action_name
-			# redirect_to :controller => "admin", :action => "signin_form"
-			# return false
-		# end
-	# end
+	def check_authentication
+		unless session[:user]
+			session[:intended_action] = action_name
+			session[:intended_controller] = controller_name
+			##puts "+++++++++ " + controller_name + " - " + action_name
+			redirect_to :controller => "admin", :action => "login"
+			return false
+		end
+	end
 	
-	# def check_authorization
-		# user = Usuario.find(session[:user])
-		# unless user.perfil.privilegios.detect{|right|
-			# right.action == action_name && right.controller == controller_name
-			# }
-			# flash[:notice] = "Usted no est&aacute; autorizado para ver la p&aacute;gina solicitada"
-			# request.env["HTTP_REFERER"] ? (redirect_to :back) : (redirect_to home_url)
-			# return false
-		# end
-	# end
+	def check_authorization
+		user = Usuario.find(session[:user])
+		#puts "+++++++++ " + controller_name + " - " + action_name
+		unless user.perfil.privilegios.detect{|right|
+			right.action == action_name && right.controller == controller_name
+			}
+			flash[:notice] = "Usted no est&aacute; autorizado para ver la p&aacute;gina solicitada"
+			request.env["HTTP_REFERER"] ? (redirect_to :back) : (redirect_to home_url)
+			return false
+		end
+	end
 	
 	# -----------------------------------------------------------------------------------------------------------------------
 	

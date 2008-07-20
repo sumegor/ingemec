@@ -35,7 +35,7 @@ ActionController::Routing::Routes.draw do |map|
 
   # See how all your routes lay out with "rake routes"
 
-	map.home	'', :controller => 'admin', :action => 'form_entrada'
+	map.home	'', :controller => 'admin', :action => 'login'
 	map.inicio	'inicio', :controller => 'inicio', :action => 'index'
 	#map.root	:controller => 'admin', :action => 'form_entrada'
 	

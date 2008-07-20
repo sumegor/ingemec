@@ -31,9 +31,11 @@ class Usuario < ActiveRecord::Base
 	def self.authenticate(username, password)
 		user = Usuario.find(:first, :conditions => [' username = ?' , username])
 		if user.blank? || Digest::SHA256.hexdigest(password + user.password_salt) != user.password_hash
-			raise "Nombre invalido"
-		end
-		user
+			#raise "Nombre invalido"
+			return false
+		else
+			return true
+	  end
 	end
 
 end

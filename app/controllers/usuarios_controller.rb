@@ -6,10 +6,10 @@ class UsuariosController < ApplicationController
 	active_scaffold :usuario do |config|
 		config.label = "Usuarios"
 		config.columns = [:apellidos, :nombres, :tipo_doc, :documento,  :direccion, :ciudad, 
-											:telefono_1, :telefono_2, :movil, :email, :perfil, :username, :password, 
+											:telefono_1, :telefono_2, :movil, :email, :username, :perfil, :password, 
 											:password_confirmation]
 		list.columns.exclude 	:direccion, :ciudad, :telefono_1, :telefono_2, :password,
-													:password_confirmation, :perfil
+													:password_confirmation, :movil, :tipo_doc, :documento
 		list.sorting = {:apellidos => 'ASC'}
 		
 		config.columns[:tipo_doc].form_ui = :select

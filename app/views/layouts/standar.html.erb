@@ -25,7 +25,9 @@
 		
                     <div id="info_general">
                   <div id="date"> <%=  Time.now.to_s(:fecha_larga) %></div>
-                  <div id="username"> hspitia - administrador</div>
+                  <div id="username"> 
+										<%= session[:user].username + " - " + session[:user].perfil.nombre %> 
+									</div>
                     </div>
             
         <div class=" caja_menu_superior">
@@ -34,11 +36,14 @@
               <div class="caja_titulo_menu_superior">
                 <div id="navi_top">
                   <ul>
-                    <li><div class="img_item_inicio"></div><a href="#">Inicio</a></li>
+                    <li><div class="img_item_inicio"></div><%= link_to "Inicio", {:controller => "inicio", :action => "index"}%></li>
                     <li class="separador_menu_superior">|</li>
                     <li><div class="img_item_manual"></div><a href="#">Manual de usuario</a></li>
                     <li class="separador_menu_superior">|</li>
-                    <li><div class="img_item_cerrar_sesion"></div><a href="#">Cerrar sesi&oacute;n</a></li>
+                    <li><div class="img_item_cerrar_sesion"></div>
+											<!-- <a href="#">Cerrar sesi&oacute;n</a> -->
+											<%= link_to "Cerrar sesi&oacute;n", {:controller => "admin", :action => "logout"}%>
+										</li>
                   </ul>
                 </div> <!--navi_top-->
 

@@ -1,1 +1,0 @@
-us = Usuario.create(:apellidos => "Fulanito", :nombres => "Cosme", :documento => "123", :direccion => "Av. Siempre Viva", :telefono_1 => "123", :movil => "123", :email => "cosmefulanito@gmail.com", :username => "cosme")
