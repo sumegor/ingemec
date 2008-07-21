@@ -34,7 +34,20 @@ ActionController::Routing::Routes.draw do |map|
   # map.root :controller => "welcome"
 
   # See how all your routes lay out with "rake routes"
-
+	
+	# map.resources :usuarios, :active_scaffold => true
+	# map.resources :clientes, :active_scaffold => true
+	# map.resources :obras, :active_scaffold => true
+	# map.resources :herramientas, :active_scaffold => true
+	# map.resources :ejemplares, :active_scaffold => true
+	# map.resources :fabricantes, :active_scaffold => true
+	# map.resources :ciudades, :active_scaffold => true
+	# map.resources :departamentos, :active_scaffold => true
+	# map.resources :paises, :active_scaffold => true
+	# map.resources :tipos_doc, :active_scaffold => true
+	# map.resources :perfiles, :active_scaffold => true
+	# map.resources :privilegios, :active_scaffold => true
+	
 	map.home	'', :controller => 'admin', :action => 'login'
 	map.inicio	'inicio', :controller => 'inicio', :action => 'index'
 	#map.root	:controller => 'admin', :action => 'form_entrada'

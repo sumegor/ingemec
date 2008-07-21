@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20080713035912) do
+ActiveRecord::Schema.define(:version => 20080719213248) do
 
   create_table "ciudades", :force => true do |t|
     t.string   "nombre",                            :null => false
@@ -121,11 +121,12 @@ ActiveRecord::Schema.define(:version => 20080713035912) do
   end
 
   create_table "privilegios", :force => true do |t|
-    t.string "nombre",      :null => false
-    t.string "nombre_menu", :null => false
-    t.text   "descripcion"
-    t.string "controller",  :null => false
-    t.string "action",      :null => false
+    t.string  "nombre",       :null => false
+    t.string  "nombre_menu",  :null => false
+    t.text    "descripcion"
+    t.string  "controller",   :null => false
+    t.string  "action",       :null => false
+    t.boolean "visible_menu", :null => false
   end
 
   create_table "tipos_doc", :force => true do |t|

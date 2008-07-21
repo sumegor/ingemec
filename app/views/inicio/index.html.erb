@@ -1,4 +1,8 @@
 <h1>Pagina de inicio</h1>
 <br>
-Si necesita permisos.
+<br>
+<br>
 
+<% for privilegio in @privilegios%>
+<p> <%=h privilegio.nombre + " " + privilegio.orden_menu.to_s%> <%= menu_item_tag(privilegio) %></p>
+<% end %>

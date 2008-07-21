@@ -7,7 +7,7 @@ class Usuario < ActiveRecord::Base
 	belongs_to :perfil
 	
 	validates_presence_of	:nombres, :apellidos, :documento, :direccion, :telefono_1,
-												:movil, :email, :username, :password, :password_confirmation
+												:movil, :email, :username#, :password, :password_confirmation
 												
 	validates_uniqueness_of :username
 	

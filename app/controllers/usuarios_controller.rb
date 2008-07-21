@@ -10,7 +10,10 @@ class UsuariosController < ApplicationController
 											:password_confirmation]
 		list.columns.exclude 	:direccion, :ciudad, :telefono_1, :telefono_2, :password,
 													:password_confirmation, :movil, :tipo_doc, :documento
-		list.sorting = {:apellidos => 'ASC'}
+		update.columns.exclude :password, :password_confirmation
+		config.columns[:password].required = true
+		config.columns[:password_confirmation].required = true
+		list.sorting = [{:apellidos => 'ASC'}, {:nombres => 'ASC'}]
 		
 		config.columns[:tipo_doc].form_ui = :select
 		config.columns[:ciudad].form_ui = :select
