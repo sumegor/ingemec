@@ -8,6 +8,17 @@ module InicioHelper
 			when 1 : "<li class=\"first_level\"> #{div_img} #{link} </li> "	
 			when 2 : "<li class=\"second_level\"> #{link} </li> "	
 		end
+		
+		session[:navi] = cadena
+			
+		return cadena
 	end
+	
+	# def contruir_navi(privilegios)
+		# for privilegio in privilegios
+			# cadena += menu_item_tag(privilegio)
+		# end
+		
+	#end
 	
 end

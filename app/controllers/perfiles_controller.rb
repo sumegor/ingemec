@@ -1,5 +1,4 @@
 class PerfilesController < ApplicationController
-	layout "standar"
 	
 	active_scaffold :perfil
 	

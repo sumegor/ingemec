@@ -1,5 +1,4 @@
 class HerramientasController < ApplicationController
-	layout "standar"
 	
 	active_scaffold :herramienta
 	

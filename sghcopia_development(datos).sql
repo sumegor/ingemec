@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 21-07-2008 a las 00:38:00
+-- Tiempo de generación: 21-07-2008 a las 02:25:17
 -- Versión del servidor: 5.0.51
 -- Versión de PHP: 5.2.5
 
@@ -1849,4 +1849,4 @@ INSERT INTO `usuarios` (`id`, `nombres`, `apellidos`, `documento`, `direccion`, 
 (3, 'Susana', 'Medina Gordillo', '123', 'Cll 12', '123', '123', '987654321', 'sumegor@hotmail.com', 'sumegor', 1, 153, '2008-07-10 04:22:09', '2008-07-20 22:47:51', 'dzXD82fF', '1456bcd34007e47e0f8fb74e6cca9fac7a4f9793dd9ba765c20adb1dfbd6b885', 1),
 (4, 'Víctor Alberto', 'Romero González', '123', 'Cra 45', '123', '123', '654', 'varg4444@gmail.com', 'victor', 1, 153, '2008-07-10 04:26:46', '2008-07-20 22:48:43', 'cjo6NnfX', '918bb76f5422595924de3dd85f8a1d88acceb7be12e0619a89da846bfb910f2d', 1),
 (5, 'Cosme', 'Fulanito', '123', 'cll siempre viva', '123', '123', '123', 'cosme@gmail.com', 'cosme', 1, 2, '2008-07-13 03:18:22', '2008-07-20 22:12:50', 'xiSnjcr4', '1c03ea9809c2d70d0ca80fc298dad7204086cbefdcad1e9f2bc259a942a1fda1', 2),
-(6, 'prueba1', 'prueba1', '123', 'asd1', '123', '123', '123', 'prueba@hotmail.com', 'prueba1', 1, 153, '2008-07-21 01:21:11', '2008-07-21 01:21:11', 'Hijt4uP7', '72caba9cd75da72f1e79ce9fc70f61fdd951691477efc3bf495123bb30b305e0', 2);
+(6, 'prueba1', 'prueba1', '123', 'asd1', '123', '123', '123', 'prueba@hotmail.com', 'prueba1', 1, 153, '2008-07-21 01:21:11', '2008-07-21 06:19:53', '+/JFzIiT', '171eaf9f186dfc1566e4c6138b219fec2ec6b86129cd49ae15aefac44ce1053e', 4);

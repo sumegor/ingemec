@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20080719213248) do
+ActiveRecord::Schema.define(:version => 20080721063055) do
 
   create_table "ciudades", :force => true do |t|
     t.string   "nombre",                            :null => false
@@ -86,7 +86,6 @@ ActiveRecord::Schema.define(:version => 20080719213248) do
     t.string   "estado",                     :null => false
     t.datetime "fecha_inicio",               :null => false
     t.datetime "fecha_fin",                  :null => false
-    t.integer  "tipo_obra_id", :limit => 11, :null => false
     t.integer  "ciudad_id",    :limit => 11, :null => false
     t.integer  "usuario_id",   :limit => 11
     t.integer  "cliente_id",   :limit => 11, :null => false
@@ -121,12 +120,14 @@ ActiveRecord::Schema.define(:version => 20080719213248) do
   end
 
   create_table "privilegios", :force => true do |t|
-    t.string  "nombre",       :null => false
-    t.string  "nombre_menu",  :null => false
+    t.string  "nombre",                                   :null => false
+    t.string  "nombre_menu",                              :null => false
     t.text    "descripcion"
-    t.string  "controller",   :null => false
-    t.string  "action",       :null => false
-    t.boolean "visible_menu", :null => false
+    t.string  "controller",                               :null => false
+    t.string  "action",                                   :null => false
+    t.boolean "visible_menu",                             :null => false
+    t.integer "nivel_menu",   :limit => 2, :default => 2, :null => false
+    t.integer "orden_menu",   :limit => 2,                :null => false
   end
 
   create_table "tipos_doc", :force => true do |t|

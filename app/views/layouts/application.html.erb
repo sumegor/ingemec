@@ -62,24 +62,9 @@
         <div class="caja_centro_menu">
                 <div class="caja_texto_menu">
                   <ul id="navi_opciones" class="navi">
-                    <li class="first_level"><div class="img_item_usuarios"></div><a href="index_copia.html">Usuarios</a> </li>
-                                
-                    <li class="first_level"><div class="img_item_perfiles"></div><a href="index_copia.html">Perfiles</a> </li>
-                              <li class="first_level"><div class="img_item_privilegios"></div><a href="index_copia.html">Privilegios</a> </li>
-                              <li class="first_level"><div class="img_item_clientes"></div><a href="index_copia.html">Clientes</a> </li>
-                              <li class="first_level"><div class="img_item_obras"></div><a href="index_copia.html">Obras</a> </li>
-                              <li class="second_level"> <a href="index_copia.html">Asignar</a></li>
-                              <li class="first_level"> <div class="img_item_herramientas"></div> <a href="index_copia.html">Herramientas</a> </li>
-                              <li class="second_level"> <a href="index_copia.html">Fabricantes</a></li>
-                              <li class="second_level"> <a href="index_copia.html">Cargar</a></li>
-                              <li class="second_level"> <a href="index_copia.html">Descargar</a></li>
-                              <li class="first_level"><div class="img_item_informes"></div><a href="index_copia.html">Informes</a> </li>
-                              <li class="second_level"> <a href="index_copia.html">Inventario</a></li>
-                              <li class="second_level"> <a href="index_copia.html">Herramienta por Obra</a></li>
-                              <li class="second_level"> <a href="index_copia.html">Costo de Herramienta</a></li>
-                              <li class="second_level"> <a href="index_copia.html">Herramienta a cargo</a></li>
-                              <li class="second_level"> <a href="index_copia.html">Obras por Cliente</a></li>
-                              <li class="second_level"> <a href="index_copia.html">Asignar</a></li>
+                    
+										<%=  render(:partial => "shared/navi") %>
+										
                   </ul> <!-- navi_opciones -->
                 </div> <!-- texto -->
       </div> <!-- centro -->
@@ -128,7 +113,7 @@
                          
 													<% if flash[:notice]%> <div class="flash"> <% flash[:notice]%> </div>	<%end%>									
 													<div id="contenedor_tabla">
-												<%= yield  %>
+												<%= yield  :layout %>
 												</div>
                     
                     </div> <!-- area_texto -->

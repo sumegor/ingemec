@@ -1,5 +1,5 @@
 class UsuariosController < ApplicationController
-	layout "standar"
+	#layout "standar"
 	
 	active_scaffold :usuario
 	

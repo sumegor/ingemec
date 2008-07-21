@@ -1,5 +1,4 @@
 class CiudadesController < ApplicationController
-	layout "standar"
 	
 	active_scaffold :ciudad
 	

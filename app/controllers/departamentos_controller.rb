@@ -1,5 +1,4 @@
 class DepartamentosController < ApplicationController
-	layout "standar"
 	
 	active_scaffold :departamento
 	

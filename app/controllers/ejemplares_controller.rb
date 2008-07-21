@@ -1,5 +1,4 @@
 class EjemplaresController < ApplicationController
-	layout "standar"
 	
 	active_scaffold :ejemplar
 	

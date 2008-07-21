@@ -1,12 +1,11 @@
 class ClientesController < ApplicationController
-	layout "standar"
 	
 	active_scaffold :cliente
 	
 	active_scaffold :cliente do |config|
 		config.label = "Clientes"
-		config.columns = [:referencia, :nombre, :descripcion, :cantidad]
-		list.columns.exclude :cantidad
+		config.columns = [:nombre, :email, :direccion, :telefono_1, :telefono_2, :fax]
+		list.columns.exclude :telefono_2
 		list.sorting = {:nombre => 'ASC'}
 	end
 	

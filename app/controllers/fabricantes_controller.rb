@@ -1,5 +1,4 @@
 class FabricantesController < ApplicationController
-	layout "standar"
 	
 	active_scaffold :fabricante
 	

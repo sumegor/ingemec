@@ -81,6 +81,10 @@ ActiveSupport::CoreExtensions::Time::Conversions::DATE_FORMATS.merge!(
 	:fecha_larga => "%A, %d de %B de %Y"
 )
 
+ActiveSupport::CoreExtensions::Time::Conversions::DATE_FORMATS.merge!(
+	:fecha_corta => "%d-%b-%Y"
+)
+
 #PERSONALIZACION DE IDIOMA ESPAÑOL
 require "#{RAILS_ROOT}/app/overrides/all"
 

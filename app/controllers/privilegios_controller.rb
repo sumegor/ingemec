@@ -1,5 +1,4 @@
 class PrivilegiosController < ApplicationController
-	layout "standar"
 	
 	active_scaffold :privilegio
 	

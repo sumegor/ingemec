@@ -1,5 +1,4 @@
 class PaisesController < ApplicationController
-	layout "standar"
 	
 	active_scaffold :pais 
 	

@@ -1,5 +1,4 @@
 class ObrasController < ApplicationController
-	layout "standar"
 	
 	active_scaffold :obra
 	
