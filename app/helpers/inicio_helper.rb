@@ -14,11 +14,13 @@ module InicioHelper
 		return cadena
 	end
 	
-	# def contruir_navi(privilegios)
-		# for privilegio in privilegios
-			# cadena += menu_item_tag(privilegio)
-		# end
+	def	cambio_password_item_tag
+		link = link_to "Cambiar contrase&ntilde;a", {:controller => "admin", :action => "cambiar_password"	}
+		div_img = "<div class=\"img_item_cambio_contrasena\"></div>"
 		
-	#end
+		cadena = "<li class=\"first_level\"> #{div_img} #{link} </li> "	
+		
+		return cadena
+	end
 	
 end

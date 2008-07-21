@@ -16,17 +16,27 @@ class Usuario < ActiveRecord::Base
     	"#{nombres} #{apellidos}"
   	end
 	
-
-	def validate
-     errors.add('password', 'y confirmaci&oacute; no coinciden') \
-            unless password_confirmation == password
-  end
-	
+	# EncriptaciOn password
 	def before_save
-		salt = [Array.new(6){rand(256).chr}.join].pack("m").chomp
-		self.password_salt, self.password_hash = salt, Digest::SHA256.hexdigest(self.username + salt)
+		#puts "++++++++++++++ En before_save -> password:  #{password}"
+		unless password.blank?
+			salt = [Array.new(6){rand(256).chr}.join].pack("m").chomp
+			self.password_salt, self.password_hash = 	salt, Digest::SHA256.hexdigest(password + salt)
+		end
 	end
-
+	
+	#Valida coincidencia de password y password_confirmation
+	def validate
+		#puts "--- ENTRANDO A VALIDATE----- password, password_confirmation: #{password} - #{password_confirmation}"
+		errors.add('contrase&ntilde;a', 'y confirmaci&oacute;n no coinciden') unless password_confirmation == password
+	end
+	
+	#Valida presencia de de password y password_confirmation cuando se crea el usuario
+	def validate_on_create
+		#puts "--- ENTRANDO A VALIDATE ON CREATE ----- password, password_confirmation : #{self.password},  #{password_confirmation}" 
+		errors.add('contrase&ntilde;a','no puede estar en blanco') unless !self.password.blank?
+		errors.add('confirmaci&oacute;n','no puede estar en blanco') unless !self.password_confirmation.blank?					
+	end
 	
 	def self.authenticate(username, password)
 		user = Usuario.find(:first, :conditions => [' username = ?' , username])

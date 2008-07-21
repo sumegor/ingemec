@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20080721063055) do
+ActiveRecord::Schema.define(:version => 20080721193008) do
 
   create_table "ciudades", :force => true do |t|
     t.string   "nombre",                            :null => false
@@ -49,19 +49,40 @@ ActiveRecord::Schema.define(:version => 20080721063055) do
     t.datetime "updated_at"
   end
 
-  create_table "ejemplares", :force => true do |t|
-    t.datetime "fecha_compra",                                                 :null => false
-    t.integer  "vida_util_anhos", :limit => 11
-    t.decimal  "costo_compra",                  :precision => 11, :scale => 2, :null => false
-    t.decimal  "costo_dia",                     :precision => 11, :scale => 2, :null => false
-    t.text     "descripcion",                                                  :null => false
-    t.string   "estado",                                                       :null => false
-    t.string   "disponibilidad",                                               :null => false
-    t.integer  "herramienta_id",  :limit => 11,                                :null => false
-    t.integer  "fabricante_id",   :limit => 11,                                :null => false
+  create_table "disponibilidades_ejemplares", :force => true do |t|
+    t.string   "nombre",      :null => false
+    t.text     "descripcion", :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "codigo",          :limit => 40,                                :null => false
+  end
+
+  create_table "ejemplares", :force => true do |t|
+    t.datetime "fecha_compra",                                                            :null => false
+    t.integer  "vida_util_anhos",            :limit => 11
+    t.decimal  "costo_compra",                             :precision => 11, :scale => 2, :null => false
+    t.decimal  "costo_dia",                                :precision => 11, :scale => 2, :null => false
+    t.text     "descripcion",                                                             :null => false
+    t.integer  "herramienta_id",             :limit => 11,                                :null => false
+    t.integer  "fabricante_id",              :limit => 11,                                :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "codigo",                     :limit => 40,                                :null => false
+    t.integer  "estado_ejemplar_id",         :limit => 11,    :default => 1,                :null => false
+    t.integer  "disponibilidad_ejemplar_id", :limit => 11,     :default => 1,               :null => false
+  end
+
+  create_table "estado_ejemplares", :force => true do |t|
+    t.string   "nombre",      :null => false
+    t.text     "descripcion", :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "estados_obras", :force => true do |t|
+    t.string   "nombre",      :null => false
+    t.text     "descripcion", :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "fabricantes", :force => true do |t|
@@ -80,17 +101,17 @@ ActiveRecord::Schema.define(:version => 20080721063055) do
   end
 
   create_table "obras", :force => true do |t|
-    t.string   "nombre",                     :null => false
-    t.text     "descripcion",                :null => false
-    t.string   "direccion",                  :null => false
-    t.string   "estado",                     :null => false
-    t.datetime "fecha_inicio",               :null => false
-    t.datetime "fecha_fin",                  :null => false
-    t.integer  "ciudad_id",    :limit => 11, :null => false
-    t.integer  "usuario_id",   :limit => 11
-    t.integer  "cliente_id",   :limit => 11, :null => false
+    t.string   "nombre",                       :null => false
+    t.text     "descripcion",                  :null => false
+    t.string   "direccion",                    :null => false
+    t.datetime "fecha_inicio",                 :null => false
+    t.datetime "fecha_fin",                    :null => false
+    t.integer  "ciudad_id",      :limit => 11, :null => false
+    t.integer  "usuario_id",     :limit => 11
+    t.integer  "cliente_id",     :limit => 11, :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "estado_obra_id", :limit => 11, :default => 1, :null => false
   end
 
   create_table "paises", :force => true do |t|

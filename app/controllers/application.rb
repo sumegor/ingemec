@@ -11,7 +11,7 @@ class ApplicationController < ActionController::Base
 		unless session[:user]
 			session[:intended_action] = action_name
 			session[:intended_controller] = controller_name
-			##puts "+++++++++ " + controller_name + " - " + action_name
+			puts "+++++++++ " + controller_name + " - " + action_name
 			redirect_to :controller => "admin", :action => "login"
 			return false
 		end
@@ -19,7 +19,7 @@ class ApplicationController < ActionController::Base
 	
 	def check_authorization
 		user = Usuario.find(session[:user])
-		#puts "+++++++++ " + controller_name + " - " + action_name
+		##puts "+++++++++ " + controller_name + " - " + action_name
 		unless user.perfil.privilegios.detect{|right|
 			right.action == action_name && right.controller == controller_name
 			}
